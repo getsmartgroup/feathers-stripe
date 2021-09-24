@@ -1,63 +1,62 @@
 {
-  "name": "feathers-stripe",
-  "description": "A Feathers service for Stripe",
-  "version": "0.11.0",
-  "homepage": "https://github.com/feathersjs-ecosystem/feathers-stripe",
-  "main": "lib/",
-  "keywords": [
-    "stripe",
-    "feathers",
-    "feathers-plugin"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/feathersjs-ecosystem/feathers-stripe.git"
-  },
-  "author": {
-    "name": "Feathers contributors",
-    "email": "hello@feathersjs.com",
-    "url": "https://feathersjs.com"
-  },
-  "contributors": [],
-  "bugs": {
-    "url": "https://github.com/feathersjs-ecosystem/feathers-stripe/issues"
-  },
-  "engines": {
-    "node": ">= 6"
-  },
-  "scripts": {
-    "changelog": "github_changelog_generator --no-issues -p feathers-stripe -u feathersjs-ecosystem && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
-    "publish": "git push origin --tags && npm run changelog && git push origin",
-    "release:patch": "npm version patch && npm publish",
-    "release:minor": "npm version minor && npm publish",
-    "release:major": "npm version major && npm publish",
-    "lint": "semistandard --fix",
-    "mocha": "mocha --opts mocha.opts",
-    "test": "npm run lint && npm run coverage",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --config .mocharc.json test/"
-  },
-  "semistandard": {
-    "env": [
-      "mocha"
-    ]
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "dependencies": {
-    "@feathersjs/errors": "^4.5.11",
-    "debug": "^4.3.2",
-    "stripe": "^8.167.0"
-  },
-  "devDependencies": {
-    "@feathersjs/express": "^4.5.11",
-    "@feathersjs/feathers": "^4.5.11",
-    "@feathersjs/socketio": "^4.5.11",
-    "body-parser": "^1.19.0",
-    "chai": "^4.3.4",
-    "istanbul": "^1.1.0-alpha.1",
-    "mocha": "^9.0.3",
-    "semistandard": "^16.0.1"
-  }
+	"name": "feathers-stripe",
+	"description": "A Feathers service for Stripe",
+	"version": "0.11.0",
+	"homepage": "https://github.com/feathersjs-ecosystem/feathers-stripe",
+	"main": "lib/",
+	"keywords": [
+		"stripe",
+		"feathers",
+		"feathers-plugin"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/feathersjs-ecosystem/feathers-stripe.git"
+	},
+	"author": {
+		"name": "Feathers contributors",
+		"email": "hello@feathersjs.com",
+		"url": "https://feathersjs.com"
+	},
+	"contributors": [],
+	"bugs": {
+		"url": "https://github.com/feathersjs-ecosystem/feathers-stripe/issues"
+	},
+	"engines": {
+		"node": ">= 6"
+	},
+	"scripts": {
+		"changelog": "github_changelog_generator --no-issues -p feathers-stripe -u feathersjs-ecosystem && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
+		"publish": "git push origin --tags && npm run changelog && git push origin",
+		"release:patch": "npm version patch && npm publish",
+		"release:minor": "npm version minor && npm publish",
+		"release:major": "npm version major && npm publish",
+		"lint": "semistandard --fix",
+		"mocha": "mocha --opts mocha.opts",
+		"test": "npm run lint && npm run coverage",
+		"coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --config .mocharc.json test/"
+	},
+	"semistandard": {
+		"env": [
+			"mocha"
+		]
+	},
+	"directories": {
+		"lib": "lib"
+	},
+	"dependencies": {
+		"@feathersjs/errors": "^4.5.11",
+		"debug": "^4.3.2"
+	},
+	"devDependencies": {
+		"@feathersjs/express": "^4.5.11",
+		"@feathersjs/feathers": "^4.5.11",
+		"@feathersjs/socketio": "^4.5.11",
+		"body-parser": "^1.19.0",
+		"chai": "^4.3.4",
+		"istanbul": "^1.1.0-alpha.1",
+		"mocha": "^9.0.3",
+		"semistandard": "^16.0.1"
+	}
 }
